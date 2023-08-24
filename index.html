@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/main_2.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="row header v-vis">
+      <div class="flo-l font-B header-box header-item header-name">
+        <span>JUNG</span>
+      </div>
+      <div class="flo-r font-N font-right header-box">
+        <div class="header-item flo-r header-btn" id="btn1">
+          <span>CV</span>
+        </div>
+        <div class="header-item flo-r header-btn">
+          <span>About</span>
+        </div>
+        <div class="header-item flo-r header-btn bg-yellow">
+          <span>Work</span>
+        </div>
+      </div>
+    </div>
+    <div class="row hello">
+      <video autoplay muted loop>
+        <source class="video-source" src="src/bridge.mp4" />
+      </video>
+      <div class="font-B flo-l hello-word hello-word_l absolute-align">
+        <span>I'm Jung.</span>
+      </div>
+      <div class="font-B flo-r hello-word hello-word_r absolute-align say-hello">
+        <span id="hello-word">안녕!</span>
+      </div>
+      <div class="font-N hello-content absolute-align">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores in
+        architecto quibusdam quos ab! Sed libero exercitationem ratione saepe,
+        ipsam sunt architecto quibusdam, labore, provident autem dicta et esse
+        dolores! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Maiores in architecto quibusdam quos ab! Sed libero exercitationem
+        ratione saepe, ipsam sunt architecto quibusdam, labore, provident autem
+        dicta et esse dolores!
+      </div>
+      <label class="btn-label" for="hello-arrow"
+        >You can't wait to check my work, right?</label
+      >
+      <br />
+      <button class="arrow-btn" id="hello-arrow">↓</button>
+    </div>
+    <div class="row work">
+      <div class="font-B hello-word font-center">
+        <span>Work</span>
+      </div>
+      <div style="position: relative">
+        <div class="work-btn_container work-btn_clone index-1"></div>
+        <div class="work-btn_container index-2">
+          <button class="work-btn_l index-2 uiux-btn">UI/UX</button>
+          <button class="work-btn index-2 flo-r fun-btn">FUN WORK</button>
+        </div>
+      </div>
+      <div class="work-content uiux-container">
+        <div class="work-content_item40 work-border">
+          <div class="item-bg">
+            <img src="src/first.png" alt="" />
+            <div class="words">
+              <div class="align-center">
+                <span class="font-B font-white">Korin Real Estate</span>
+                <br />
+                <span class="font-N font-yellow fw-B"
+                  >#UX Research #UI Design #Visual Design</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-content_item20 work-border">
+          <div class="item-bg">
+            <img src="src/phone.png" alt="" />
+            <div class="words">
+              <div class="align-center">
+                <span class="font-B font-white">Spirit Airlines Redesign</span>
+                <br />
+                <span class="font-N font-yellow fw-B"
+                  >#Mobile App #UX Resesarch #Prototyping</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-content_item30 work-border">
+          <div class="item-bg">
+            <img src="src/laptop.jpg" alt="" />
+            <div class="words">
+              <div class="align-center">
+                <span class="font-B font-white">Globalizing Gender</span>
+                <br />
+                <span class="font-N font-yellow fw-B"
+                  >#UX Research #UI Design #Visual Design</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="work-content_item40 work-border">
+          <div class="item-bg">
+            <img src="src/ikea.jpg" alt="" />
+            <div class="words">
+              <div class="align-center">
+                <span class="font-B font-white">IKEA Assembler</span>
+                <br />
+                <span class="font-N font-yellow fw-B"
+                  >#Web #Development #UX Reasearch</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-content fun-container">
+        <div class="work-content_item40 work-border">
+          <div class="words"></div>
+          <div class="item-bg">
+            <img src="src/fun1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="work-content_item40 work-border">
+          <div class="words"></div>
+          <div class="item-bg">
+            <img src="src/fun2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="work-content_item40 work-border">
+          <div class="words"></div>
+          <div class="item-bg">
+            <img src="src/fun2.gif.crdownload" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mail-container">
+      <div class="mail-word font-B font-center hello-word index-3">
+        <span
+          >Let's Make
+          <br />
+          somethin' fun together!</span
+        >
+      </div>
+      <div class="mail-bg">
+        <div style="width: 400px; height: 200px; position: relative">
+          <div class="mail-cloud" style="left: 150px; top: 250px; z-index: 2">
+            <img src="src/Cloud.webp" alt="" />
+          </div>
+          <div
+            class="mail-cloud"
+            style="left: 140px; top: 250px; z-index: 1; transform: scale(2.5)"
+          >
+            <img src="src/Cloud2.webp" alt="" />
+          </div>
+          <div
+            class="mail-cloud"
+            style="left: 1300px; top: 30px; z-index: 1; transform: scale(1)"
+          >
+            <img src="src/Cloud3_Copy.webp" alt="" />
+          </div>
+          <div
+            class="mail-cloud"
+            style="left: 200px; bottom: 330px; z-index: 1; transform: scale(1)"
+          >
+            <img src="src/Cloud2.webp" alt="" />
+          </div>
+          <div
+            class="mail-cloud"
+            style="right: 0px; bottom: 100px; z-index: 1; transform: scale(1)"
+          >
+            <img src="src/Cloud2.webp" alt="" />
+          </div>
+          <div
+            class="mail-cloud"
+            style="
+              left: 1200px;
+              top: 300px;
+              z-index: 1;
+              transform: scale(2) rotateY(180deg);
+            "
+          >
+            <img src="src/Cloud2.webp" alt="" />
+          </div>
+        </div>
+        <div class="mail-btn_container">
+          <button class="work-btn mail-btn font-B">
+            <span>Hit Me Up!</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row contact">
+      <div class="flo-l font-center contact-l">
+        <p class="contact-about">Junghoe Hwang</p>
+      </div>
+      <div class="flo-r w-50 contact-r">
+        <span class="contact-about">Contact</span>
+        <span class="contact-about"
+          ><i class="fa-regular fa-envelope"></i
+        ></span>
+        <span>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram">
+            </a></i></span>
+        <span>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fa-brands fa-linkedin-in">
+            </i></a></span>
+      </div>
+    </div>
+    <div class="fix-btn index-3">
+      <button class="arrow-btn" id="fix-arrow">↓</button>
+    </div>
+
+    <script>
+      // nav 버튼 노란색
+      document
+        .querySelectorAll(".header-btn")[1]
+        .addEventListener("click", function () {
+          document
+            .querySelectorAll(".header-btn")[1]
+            .classList.add("bg-yellow");
+          document
+            .querySelectorAll(".header-btn")[2]
+            .classList.remove("bg-yellow");
+          console.log("click");
+        });
+      document
+        .querySelectorAll(".header-btn")[2]
+        .addEventListener("click", function () {
+          document
+            .querySelectorAll(".header-btn")[2]
+            .classList.add("bg-yellow");
+          document
+            .querySelectorAll(".header-btn")[1]
+            .classList.remove("bg-yellow");
+          console.log("click");
+        });
+
+      // nav바 스크롤 시 사라짐, 픽스 버튼 변경 및 동작
+      
+      window.addEventListener("scroll", function () {
+        console.log(window.scrollY);
+
+      if( window.scrollY + document.querySelector('html').clientHeight > document.querySelector('html').scrollHeight - 400){
+        document.querySelector('#fix-arrow').innerHTML = '↑';
+        document.querySelector('.fix-btn').style.backgroundColor = 'white';
+        document.querySelector('#fix-arrow').addEventListener('click',function(){
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          })
+      } else {
+        document.querySelector('#fix-arrow').innerHTML = '↓';
+        document.querySelector('.fix-btn').style.backgroundColor = 'Yellow';
+        document.querySelector('#fix-arrow').addEventListener('click',function(){
+            window.scrollTo({ top: document.querySelector('html').scrollHeight, behavior: "smooth" });
+          });
+      }
+      });
+
+      window.addEventListener('mousewheel',function(e){
+        if(e.deltaY > 80){
+          document.querySelector(".header").classList.remove("v-vis");
+          document.querySelector(".header").classList.add("v-hid");
+        } else if(e.deltaY < 80){
+          document.querySelector(".header").classList.remove("v-hid");
+          document.querySelector(".header").classList.add("v-vis");
+        }
+        
+      })
+
+      // nav의 JUNG 버튼 선택 시 최상단 이동
+
+      document.querySelector('.header-name').addEventListener('click',function(){
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      })
+
+      // hello 안녕 메시지 전환
+
+      var word = ['नमस्ते दोस्त!', 'Cześć!', '你吃了吗!','你今日點咩!','Chào!', '안녕 친구!'];
+      var delaySec = 500;
+
+      setInterval(loopWord, word.length*delaySec);
+      
+      loopWord();
+
+      function loopWord(){
+              for (i in word) {
+          (function(ii) {
+              setTimeout(() => {
+                document.querySelector('#hello-word').innerHTML = word[ii];
+                console.log(word[ii])
+              }, ii * delaySec)
+          })(i);
+      }
+}
+
+      // hello ↓ 버튼 선택하면 work로 이동
+
+      document
+        .querySelector(".arrow-btn")
+        .addEventListener("click", function () {
+          var location = document.querySelector(".work").offsetTop;
+          window.scrollTo({ top: location, behavior: "smooth" });
+        });
+
+      // uiux-fun work 버튼 선택 시 전환 동작
+
+      document.querySelector(".fun-btn").addEventListener("click", function () {
+        document.querySelector(".uiux-container").style.display = "none";
+        document.querySelector(".fun-container").style.display = "flex";
+        document.querySelector(".uiux-btn").classList.add("work-btn");
+        document.querySelector(".uiux-btn").classList.remove("work-btn_l");
+        document.querySelector(".fun-btn").classList.add("work-btn_l");
+        document.querySelector(".fun-btn").classList.remove("work-btn");
+      });
+
+      document
+        .querySelector(".uiux-btn")
+        .addEventListener("click", function () {
+          document.querySelector(".uiux-container").style.display = "flex";
+          document.querySelector(".fun-container").style.display = "none";
+          document.querySelector(".uiux-btn").classList.add("work-btn_l");
+          document.querySelector(".uiux-btn").classList.remove("work-btn");
+          document.querySelector(".fun-btn").classList.add("work-btn");
+          document.querySelector(".fun-btn").classList.remove("work-btn_l");
+        });
+
+      // work-item 마우스 오버 동작
+
+      document
+        .querySelectorAll(".item-bg")[0]
+        .addEventListener("mouseover", function () {
+          document.querySelectorAll(".words")[0].style.visibility = "visible";
+        });
+
+      document
+        .querySelectorAll(".item-bg")[0]
+        .addEventListener("mouseout", function () {
+          document.querySelectorAll(".words")[0].style.visibility = "hidden";
+        });
+
+      document
+        .querySelectorAll(".item-bg")[1]
+        .addEventListener("mouseover", function () {
+          document.querySelectorAll(".words")[1].style.visibility = "visible";
+        });
+
+      document
+        .querySelectorAll(".item-bg")[1]
+        .addEventListener("mouseout", function () {
+          document.querySelectorAll(".words")[1].style.visibility = "hidden";
+        });
+
+      document
+        .querySelectorAll(".item-bg")[2]
+        .addEventListener("mouseover", function () {
+          document.querySelectorAll(".words")[2].style.visibility = "visible";
+        });
+
+      document
+        .querySelectorAll(".item-bg")[2]
+        .addEventListener("mouseout", function () {
+          document.querySelectorAll(".words")[2].style.visibility = "hidden";
+        });
+
+      document
+        .querySelectorAll(".item-bg")[3]
+        .addEventListener("mouseover", function () {
+          document.querySelectorAll(".words")[3].style.visibility = "visible";
+        });
+
+      document
+        .querySelectorAll(".item-bg")[3]
+        .addEventListener("mouseout", function () {
+          document.querySelectorAll(".words")[3].style.visibility = "hidden";
+        });
+  
+      // fun-item 마우스 오버 동작
+
+      
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,471 @@
+body {
+    margin: 0;
+    background-color: #eee;
+    padding: 1px;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    max-width: 1500px;
+}
+
+.font-B{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.font-N{
+    font-size: 15px;
+}
+
+.fw-B{
+    font-weight: bold;
+}
+
+.font-center{
+    text-align: center;
+}
+
+.font-right{
+    text-align: right;
+}
+
+.flo-l{
+    float: left;
+}
+
+.flo-r{
+    float: right;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+.font-white{
+    color: white;
+}
+
+.font-yellow{
+    color: yellow;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.index-1{
+    z-index: 1;
+}
+
+.index-2{
+    z-index: 2;
+}
+
+.index-3{
+    z-index: 3;
+}
+
+.absolute-align{
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.v-hid{
+    visibility: hidden;
+    /* transition: all 0.3s; */
+}
+
+.v-vis{
+    visibility: visible;
+    /* transition: all 0.3s; */
+}
+
+.header{
+    position: fixed;
+    z-index: 10;
+    background-color: #eee;
+    width: 100%;
+    height: 60px;
+    padding: 1px;
+    margin-bottom: 1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+ 
+}
+
+.header-box{
+    width: 50%;
+    height: 100%;
+}
+
+.header-item{
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.header-btn:hover{
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.header .header-name{
+    margin-left: 80px;
+    font-size: 20px;
+}
+
+.hello{
+    width: 100%;
+    height: 700px;
+    padding-top: 250px;
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+    color: white;
+}
+
+.hello video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+video{
+    width: 100%;
+}
+
+.hello-word{
+    font-size: 50px;
+}
+
+.hello-word_l{
+    text-align: right;
+    width: 50%;
+    padding-right: 20px;
+    position: absolute;
+    
+}
+
+.hello-word_r{
+    text-align: left;
+    width: 50%;
+    position: absolute;
+    
+}
+
+.hello-word_r::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.hello-content{
+    width: 100%;
+    margin-top: 100px;
+    position: absolute;
+    max-width: 800px;
+}
+
+.hello-content_width{
+    max-width: 500px;
+}
+
+.hello-towork{
+    width: 100%;
+    margin-top: 100px;
+    position: absolute;
+}
+
+.btn-label{
+    position: absolute;
+    cursor: pointer;
+    top: 500px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+}
+
+.arrow-btn{
+    position: absolute;
+    margin-top: 5px;
+    background-color: transparent;
+    font-size: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    bottom: 130px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+}
+
+@keyframes upDown{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+#hello-arrow{
+    animation-name: upDown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.fix-btn .arrow-btn{
+    margin-bottom: 8px;
+    bottom: 0;
+    color: black;
+}
+
+.work{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.work-btn_container{
+    width: 180px;
+    height: 50px;
+    border: 2px solid yellow;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    position: relative;
+}
+
+.work-btn_clone{
+    position: absolute;
+    border: 2px solid lightgray;
+    top: 7px;
+    left: -15px; 
+    right: 0; 
+    margin: auto;
+}
+
+.work-btn_l{
+    background-color: yellow;
+    border: 2px solid yellow;
+    box-shadow: -2px 6px 15px 1px gray;
+    border-radius: 30px;  
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.work-btn{
+    background-color: transparent;
+    height: 100%;
+    width: 50%;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;    
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.work-btn:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.work-content{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+
+.item-bg{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.words {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+
+.align-center{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.work-border{
+    box-shadow: 1px;
+}
+
+.uiux-container .work-border:hover {
+    border: 5px solid white;
+    transition: all 0.3s;
+}
+
+.fun-container .work-border .item-bg img{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+.fun-container .work-border:hover .item-bg img{
+    width: 110%;
+    height: 110%;
+    transition: all 0.5s;
+}
+
+
+.item-bg img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    max-height: 280px;
+    padding: 30px;
+}
+
+.fun-container{
+    display: none;
+}
+
+.mail-container{
+    width: 100%;
+    height: 450px;
+    background-color: yellow;
+    position: relative;
+}
+
+.mail-word{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.mail-bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mail-cloud{
+    position: absolute;
+}
+
+.mail-btn_container{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 280px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.mail-btn{
+    background-color: white;
+    width:150px;
+    height: 50px;
+    font-size: 13px;
+    box-shadow: 0, 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.mail-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.contact{
+    width: 100%;
+    height: 70px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.contact-l{
+    margin-left: 70px;
+    text-decoration: underline;
+}
+
+.contact-r{
+    margin-right: 70px;
+    text-align: right;
+    padding-top: 15px;
+}
+
+.contact-r::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contact span{
+    margin-left: 10px;
+}
+
+.contact-about{
+    cursor: pointer;
+}
+
+.contact a:visited{
+    color: black;
+}
+
+.fix-btn{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 100px;
+    background-color: yellow;
+    bottom: 130px;
+    right: 20px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.arrow-btn{
+    transition: all 0.5s;
+}

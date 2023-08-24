@@ -1,0 +1,33 @@
+@mixin work-item($width){
+    width: $width;
+    height: auto;
+    background-color: lightgray;
+    border: 5px;
+    box-shadow: 0 0 10px 1px #eee;
+    
+
+}
+
+.work-content_item40{
+    @include work-item(40%);
+}
+
+.work-content_item20{
+    @include work-item(20%);
+}
+
+.work-content_item30 {
+    @include work-item(30%);
+}
+
+@media screen and (max-width: 992px) {
+    .work-content_item40 {
+        width: 100%;
+    }
+    .work-content_item30 {
+        width: 70%;
+    }
+    .work-content_item20 {
+        width: 30%;
+    }
+}
